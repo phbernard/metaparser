@@ -1,6 +1,6 @@
 {
   "name": "metaparser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Cheerio helper library for my Node.js automation modules",
   "main": "index.js",
   "repository": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/haydenbleasel/metaparser",
   "dependencies": {
-    "async": "^0.9.0",
-    "cheerio": "^0.18.0"
+    "async": "*",
+    "cheerio": "*"
   }
 }
