@@ -42,7 +42,7 @@
                 if (options.add) {
                     var target = $('head').length > 0 ? $('head') : $.root();
                     _.each(typeof options.add === 'string' ? [options.add] : options.add, function (code) {
-                        target.append('\t' + code);
+                        target.append(code);
                     });
                     callback(null, $);
                 } else {
