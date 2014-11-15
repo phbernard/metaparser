@@ -22,6 +22,7 @@ metaparser({
     source: null,
     add: null,
     remove: null,
+    out: null,
     callback: null
 });
 ```
