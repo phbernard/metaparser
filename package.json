@@ -23,6 +23,7 @@
   "homepage": "https://github.com/haydenbleasel/metaparser",
   "dependencies": {
     "async": "*",
-    "cheerio": "*"
+    "cheerio": "*",
+    "underscore": "*"
   }
 }
