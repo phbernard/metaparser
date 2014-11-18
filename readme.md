@@ -27,10 +27,16 @@ metaparser({
 });
 ```
 
-Example usage (multi-dimensional hash, array, hash and string):
+Example usage:
 
 ```
 metaparser({
-    ...
+    source: 'test/index.html',
+    add: '<link rel="author" href="humans.txt" />',
+    remove: 'link[rel="author"]',
+    out: 'test/index2.html',
+    callback: function (error, data) {
+        console.log(error, data);
+    }
 });
 ```
