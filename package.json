@@ -1,6 +1,6 @@
 {
   "name": "metaparser",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Cheerio helper library for my Node.js automation modules",
   "main": "index.js",
   "repository": {

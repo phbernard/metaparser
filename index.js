@@ -24,7 +24,9 @@
         async.waterfall([
             function (callback) {
                 fs.readFile(options.source, function (error, data) {
-                    var $ = cheerio.load(data);
+                    var $ = cheerio.load(data, {
+                        decodeEntities: false
+                    });
                     callback(error, $);
                 });
             },
