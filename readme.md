@@ -2,7 +2,7 @@
 
 A Cheerio helper library for my Node.js automation modules. Installed through NPM with:
 
-```
+```shell
 npm install metaparser --save-dev
 ```
 
@@ -15,9 +15,8 @@ Simply require the module and execute it with an optional array of configuration
 
 Defaults are shown below:
 
-```
+```js
 var metaparser = require('metaparser');
-
 metaparser({
     source: null,
     add: null,
@@ -29,7 +28,7 @@ metaparser({
 
 Example usage:
 
-```
+```js
 metaparser({
     source: 'test/index.html',
     add: '<link rel="author" href="humans.txt" />',
