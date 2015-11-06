@@ -39,3 +39,16 @@ metaparser({
     }
 });
 ```
+Data can be provided directly:
+
+```js
+metaparser({
+    data: '<html><head><meta name="author" content="Superman"></head></html>',
+    add: '<link rel="author" href="humans.txt" />',
+    remove: 'link[rel="author"]',
+    out: 'test/index2.html',
+    callback: function (error, data) {
+        console.log(error, data);
+    }
+});
+```

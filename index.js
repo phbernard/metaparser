@@ -23,12 +23,19 @@
 
         async.waterfall([
             function (callback) {
-                fs.readFile(options.source, function (error, data) {
-                    var $ = cheerio.load(data, {
-                        decodeEntities: false
-                    });
-                    callback(error, $);
+              var decodeData = function (error, data) {
+                var $ = cheerio.load(data, {
+                    decodeEntities: false
                 });
+                callback(error, $);
+              }
+
+              if (options.source) {
+                fs.readFile(options.source, decodeData);
+              }
+              else {
+                decodeData(undefined, options.data);
+              }
             },
             function ($, callback) {
                 if (options.remove) {
